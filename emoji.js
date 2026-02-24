@@ -1,0 +1,31 @@
+let fighters = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
+
+let stageEl = document.getElementById("stage")
+let fightButton = document.getElementById("fightButton")
+
+fightButton.addEventListener("click", function() {
+    // Challenge:
+    // When the user clicks on the "Pick Fighters" button, pick two random 
+    // emoji fighters and display them as i.e. "🦀 vs 🐢" in the "stage" <div>.
+    let getRandom1 = Math.floor(Math.random() * fighters.length)
+    let getRandom2 = Math.floor(Math.random() * fighters.length)
+    stageEl.textContent = fighters[getRandom1] + " vs " + fighters[getRandom2]
+})
+
+let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"]
+let appleShelf = document.getElementById("apple-shelf")
+let orangeShelf = document.getElementById("orange-shelf")
+function arrangeItems()
+{
+    for(let i = 0; i < fruit.length; i++)
+{
+    if(fruit[i] === "🍎")
+    {
+        appleShelf.textContent += fruit[i]
+    }
+    else{
+        orangeShelf.textContent += fruit[i]
+    }
+}
+}
+arrangeItems()

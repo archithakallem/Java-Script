@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Functions in JavaScript</title>
+</head>
+<body>
+    <input type="number" id="num" placeholder="Enter your number">
+    <button id="enter" onclick="generateValue()">Enter</button>
+
+    <script>
+        function generateValue() {
+            let n = parseInt(document.getElementById("num").value); // convert to number
+            let rev = 0;
+
+            while (n !== 0) {
+                let r = n % 10;           // get last digit
+                rev = rev * 10 + r;       // build reverse number
+                n = Math.floor(n / 10);   // remove last digit
+            }
+
+            console.log(rev);
+            alert("Reversed number is: " + rev);
+        }
+    </script>
+</body>
+</html>
