@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js"
 import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-database.js"
 const firebaseConfig = {
-    apiKey: "AIzaSyCQvKuufuGZ8lT3i-z7mywpyiYT7UqIOmg",
+    apikey : "YOUR_API_KEY_HERE",
     authDomain: "leads-tracker-app-a7be2.firebaseapp.com",
     databaseURL: "https://leads-tracker-app-a7be2-default-rtdb.firebaseio.com/",
     projectId: "leads-tracker-app-a7be2",
